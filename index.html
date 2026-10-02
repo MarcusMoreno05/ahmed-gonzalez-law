@@ -4,31 +4,23 @@
   <meta charset="UTF-8">
   <title>Ahmed & Gonzalez Law – Experience when it matters</title>
   <link rel="stylesheet" href="style.css">
+  <script src="include.js" defer></script>
 </head>
+
 <body>
 
-<header>
-  <div class="navbar">
-    <div class="brand">
-      <img src="images/logo.png" class="brand-icon">
-      <div class="brand-title">Ahmed & Gonzalez Law</div>
-    </div>
-    <nav class="nav-links">
-      <a href="index.html">English</a>
-      <a href="index.html">Español</a>
-      <a href="index.html">العربية</a>
-      <a href="immigration.html">Immigration</a>
-      <a href="family-law.html">Family Law</a>
-      <a href="contact.html" class="btn-primary">Contact Us</a>
-    </nav>
-  </div>
-</header>
+<!-- HEADER INCLUDE -->
+<div data-include="header.html"></div>
 
-<section class="hero" style="background-image:url('images/statue.jpg');">
+<!-- HERO SECTION -->
+<section class="hero">
   <div class="hero-inner">
     <div class="hero-main">
       <h1>Experience when it matters most.</h1>
-      <p>Boutique law practice based in the Bronx, offering personalized legal services in immigration, family law, criminal defense, and more.</p>
+      <p>
+        Boutique law practice based in the Bronx, offering personalized legal services in immigration,
+        family law, criminal defense, and more—focused on trust, care, and results.
+      </p>
 
       <div class="hero-languages">
         <button class="btn-pill primary">English</button>
@@ -39,61 +31,94 @@
 
     <aside class="hero-side">
       <h2>Find Us</h2>
-      <p>Corner of Zerega Ave & Tratman Ave — accessible by Bx4 bus and the 6 train.</p>
-      <a href="#" class="btn btn-primary">View on Google Maps</a>
+      <p>
+        Our offices are on the corner of Zerega Ave and Tratman Ave—easily accessible by the Bx4 bus and the 6 train,
+        with the Zerega stop just steps away.
+      </p>
+      <p style="margin-top:0.75rem;">
+        <a href="https://maps.google.com" class="btn btn-primary">View on Google Maps</a>
+      </p>
     </aside>
   </div>
 </section>
 
+<!-- MAIN CONTENT -->
 <main>
   <section class="section">
     <div class="section-header">
       <h2>Practice Areas</h2>
+      <p>Clear guidance, careful preparation, and dedicated advocacy in key areas of law.</p>
     </div>
 
     <div class="grid-2">
       <div>
         <div class="card">
           <h3>Immigration</h3>
-          <p>Green Cards, Asylum, Visas, Naturalization, SIJ.</p>
-          <a href="immigration.html" class="btn btn-primary">Learn More</a>
+          <p>
+            We help clients apply for permanent residency (Green Cards), seek asylum, obtain non‑immigrant visas,
+            and pursue naturalization. We also assist children and young people eligible for Special Immigrant Juvenile (SIJ) status.
+          </p>
+          <p style="margin-top:0.5rem;">
+            <a href="immigration.html" class="btn btn-primary">Learn more about Immigration</a>
+          </p>
         </div>
 
         <div class="card">
           <h3>Family Law</h3>
-          <p>Divorce, Child Support, Custody, Guardianship, Wills & Trusts.</p>
-          <a href="family-law.html" class="btn btn-primary">Explore</a>
+          <p>
+            We assist with divorce, child custody, child support, guardianship, and estate planning through trusts and wills.
+            Our goal is to make the legal process clear and manageable during difficult times.
+          </p>
+          <p style="margin-top:0.5rem;">
+            <a href="family-law.html" class="btn btn-primary">Explore Family Law services</a>
+          </p>
         </div>
 
         <div class="card">
-          <h3>Criminal Defense</h3>
-          <p>Representation for criminal charges and false arrest cases.</p>
+          <h3>Criminal Defense & False Arrest</h3>
+          <p>
+            We represent clients facing criminal charges and individuals who have experienced false arrest or police misconduct.
+            We work to protect your rights and pursue fair outcomes.
+          </p>
         </div>
       </div>
 
       <aside class="sidebar">
         <h3>Need Legal Assistance?</h3>
-        <p>We speak English, Spanish, and Arabic.</p>
+        <p>
+          If you need help with a legal matter, contact Ahmed & Gonzalez today. Our team is ready to answer your questions
+          and guide you through the process. We speak English, Spanish, and Arabic.
+        </p>
         <a href="contact.html" class="btn-primary">Contact Us</a>
       </aside>
     </div>
   </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Consultations</h2>
+      <p>Professional legal assessment with a clear, upfront consultation policy.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consultation Fee</h3>
+      <p>
+        Please be advised that we ask for a <strong>$100 consultation fee</strong>. This fee is required to schedule a meeting
+        with our attorneys and is necessary to reserve time for a professional legal assessment of your matter.
+      </p>
+      <p>
+        The consultation fee is due prior to the appointment and will be applied toward the cost of legal services
+        should you choose to retain our firm.
+      </p>
+      <p style="margin-top:0.75rem;">
+        <a href="contact.html" class="btn btn-primary">Submit an Inquiry</a>
+      </p>
+    </div>
+  </section>
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <div>
-      <h4>Ahmed & Gonzalez Law</h4>
-      <p>1424 Zerega Avenue, Bronx NY 10462</p>
-    </div>
-    <div>
-      <h4>Practice Areas</h4>
-      <a href="immigration.html">Immigration</a>
-      <a href="family-law.html">Family Law</a>
-      <a href="contact.html">Criminal Defense</a>
-    </div>
-  </div>
-</footer>
+<!-- FOOTER INCLUDE -->
+<div data-include="footer.html"></div>
 
 </body>
 </html>
