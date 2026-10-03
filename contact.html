@@ -4,31 +4,20 @@
   <meta charset="UTF-8">
   <title>Contact Us – Ahmed & Gonzalez Law</title>
   <link rel="stylesheet" href="style.css">
+  <script src="include.js" defer></script>
 </head>
+
 <body>
-<header>
-  <div class="navbar">
-    <div class="brand">
-      <div class="brand-icon">⚖️</div>
-      <div class="brand-title">Ahmed & Gonzalez Law</div>
-    </div>
-    <nav class="nav-links">
-      <a href="index.html">English</a>
-      <a href="index.html">Español</a>
-      <a href="index.html">العربية</a>
-      <a href="immigration.html">Immigration</a>
-      <a href="family-law.html">Family Law</a>
-      <a href="contact.html" class="btn-primary">Contact Us</a>
-    </nav>
-  </div>
-</header>
+
+<div data-include="header.html"></div>
 
 <main>
   <section class="section">
     <div class="section-header">
       <h2>Contact Us</h2>
-      <p>Reach our office in the Bronx for immigration, family law, criminal defense, and false arrest matters.</p>
+      <p>Reach our office for immigration, family law, criminal defense, and false arrest matters.</p>
     </div>
+
     <div class="grid-2">
       <div>
         <div class="card">
@@ -38,73 +27,59 @@
             Phone: <strong>347‑281‑8789</strong><br>
             Email: <strong>ahmedgonzalezlaw@gmail.com</strong>
           </p>
+
           <p><strong>Hours</strong><br>
-            Monday–Friday: 9 AM–5 PM<br>
-            Saturday: CLOSED<br>
-            Sunday: CLOSED
+            Mon–Fri: 9 AM–5 PM<br>
+            Sat–Sun: Closed
           </p>
-          <p style="margin-top:0.75rem;">
-            <a href="tel:13472818789" class="btn btn-primary">Call 347‑281‑8789</a>
-          </p>
-          <p style="margin-top:0.75rem;">
-            <a href="https://maps.google.com" class="btn btn-outline">View on Google Maps</a>
-          </p>
+
+          <a href="tel:13472818789" class="btn btn-primary">Call 347‑281‑8789</a>
+          <br><br>
+          <a href="https://maps.google.com" class="btn btn-outline">View on Google Maps</a>
         </div>
+
         <div class="card" style="margin-top:1.25rem;">
           <h3>Find Us</h3>
-          <p>
-            Accessible from Bx4 bus and the 6 Train to the Zerega Avenue station.
-          </p>
-          <div class="map-placeholder">
-            Storefront / map preview placeholder
-          </div>
+          <p>Accessible from Bx4 bus and the 6 Train.</p>
+          <div class="map-placeholder">Map Placeholder</div>
         </div>
       </div>
+
       <div>
         <div class="card">
           <h3>Interested in our Services?</h3>
-          <p>
-            Have a legal matter you'd like to discuss? Please submit your inquiry using our form. If we believe we can assist,
-            a member of our team will contact you to schedule a consultation visit.
-          </p>
+          <p>Submit your inquiry and our team will contact you.</p>
+
           <p class="form-note">
-            A <strong>$100 consultation fee</strong> is required to schedule a meeting with our attorneys. This fee reserves time
-            for a professional legal assessment and is due prior to the appointment. If you retain our firm, the fee will be applied
-            toward your legal services.
+            A <strong>$100 consultation fee</strong> is required to schedule a meeting.
           </p>
-          <form style="margin-top:1rem;">
-            <div>
-              <label for="name">Name *</label>
-              <input id="name" type="text" required>
-            </div>
-            <div>
-              <label for="telephone">Telephone *</label>
-              <input id="telephone" type="tel" required>
-            </div>
-            <div>
-              <label for="email">Email *</label>
-              <input id="email" type="email" required>
-            </div>
-            <div>
-              <label for="case-type">Case Type *</label>
-              <select id="case-type" required>
-                <option value="">Select...</option>
-                <option>Immigration</option>
-                <option>Family Law</option>
-                <option>Criminal Defense</option>
-                <option>False Arrest</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div>
-              <label for="description">Describe Your Situation *</label>
-              <textarea id="description" required></textarea>
-            </div>
+
+          <form>
+            <label>Name *</label>
+            <input type="text" required>
+
+            <label>Telephone *</label>
+            <input type="tel" required>
+
+            <label>Email *</label>
+            <input type="email" required>
+
+            <label>Case Type *</label>
+            <select required>
+              <option>Immigration</option>
+              <option>Family Law</option>
+              <option>Criminal Defense</option>
+              <option>False Arrest</option>
+            </select>
+
+            <label>Describe Your Situation *</label>
+            <textarea required></textarea>
+
             <div class="disclaimer">
-              Contacting us does not create an attorney‑client relationship. Do not share sensitive or confidential information,
-              confidentiality is not guaranteed.
+              Contacting us does not create an attorney‑client relationship.
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+
+            <button class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
@@ -112,29 +87,7 @@
   </section>
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <div>
-      <h4>Ahmed & Gonzalez Law</h4>
-      <p>
-        1424 Zerega Avenue, Bronx NY 10462<br>
-        Phone: 347‑281‑8789<br>
-        Email: ahmedgonzalezlaw@gmail.com
-      </p>
-    </div>
-    <div>
-      <h4>Practice Areas</h4>
-      <div class="footer-links">
-        <a href="immigration.html">Immigration</a>
-        <a href="family-law.html">Family Law</a>
-        <a href="contact.html">Criminal Defense</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>Copyright © 2025 Ahmed & Gonzalez, LLC. All rights reserved.</span>
-    <span>Made with softrAI</span>
-  </div>
-</footer>
+<div data-include="footer.html"></div>
+
 </body>
 </html>
