@@ -4,38 +4,21 @@
   <meta charset="UTF-8">
   <title>Family Law – Ahmed & Gonzalez Law</title>
   <link rel="stylesheet" href="style.css">
+  <script src="include.js" defer></script>
 </head>
+
 <body>
-<header>
-  <div class="navbar">
-    <div class="brand">
-      <div class="brand-icon">⚖️</div>
-      <div class="brand-title">Ahmed & Gonzalez Law</div>
-    </div>
-    <nav class="nav-links">
-      <a href="index.html">English</a>
-      <a href="index.html">Español</a>
-      <a href="index.html">العربية</a>
-      <a href="immigration.html">Immigration</a>
-      <a href="family-law.html">Family Law</a>
-      <a href="contact.html" class="btn-primary">Contact Us</a>
-    </nav>
-  </div>
-</header>
+
+<div data-include="header.html"></div>
 
 <main>
   <section class="section">
     <div class="section-header">
       <h2>Family Law</h2>
-      <p>
-        We help with many family issues, like divorce, child custody, child support, guardianship, and estate planning.
-      </p>
+      <p>Divorce, child support, custody, guardianship, trusts, and wills.</p>
     </div>
+
     <div class="card">
-      <p>
-        We help with many family issues, like divorce, child custody, child support, and guardianship. We also prepare wills
-        and trusts to protect your family and property. Our goal is to make the legal process clear and simple for you.
-      </p>
       <div class="tab-row">
         <span class="tab active">Divorce</span>
         <span class="tab">Child Support</span>
@@ -45,71 +28,49 @@
     </div>
   </section>
 
-  <section class="section form-grid">
+  <section class="section grid-2">
     <div>
       <div class="card">
         <h3>Divorce</h3>
-        <p><strong>Experienced Divorce Attorneys in the Bronx, NY</strong></p>
-        <p>
-          Divorce involves important legal matters such as dividing assets, determining child custody, setting spousal support,
-          and arranging visitation. At Ahmed & Gonzalez, we provide thorough and effective representation to guide you through
-          every part of the process.
-        </p>
-        <p><strong>Skilled Legal Support</strong></p>
-        <p>
-          With over 10 years of experience in family law, we are well‑prepared to handle both straightforward and complex divorce cases.
-          We explain your rights clearly and help you make informed decisions at every stage. Our goal is to give you the legal support
-          you need with clarity and confidence.
-        </p>
-        <p><strong>Protecting Your Interests</strong></p>
-        <p>
-          We focus on what matters most to you. Every case is different, so we take time to understand your situation and goals.
-          Whether through mediation, negotiation, or court proceedings, we are committed to securing the best possible outcome for you
-          and protecting your rights throughout the process.
-        </p>
-        <p><strong>Resolving Cases Efficiently</strong></p>
-        <p>
-          Divorce can be stressful and costly. Our team works to resolve cases efficiently while maintaining attention to detail.
-          We aim for amicable agreements when possible and are prepared to advocate strongly on your behalf when needed.
-        </p>
+        <p>We guide clients through custody, support, visitation, and asset division.</p>
+        <p><strong>We help with:</strong></p>
+        <ul>
+          <li>Mediation</li>
+          <li>Negotiation</li>
+          <li>Court representation</li>
+        </ul>
       </div>
     </div>
+
     <div>
       <div class="card">
         <h3>Inquiry Your Case</h3>
         <form>
-          <div>
-            <label for="name">Name *</label>
-            <input id="name" type="text" required>
-          </div>
-          <div>
-            <label for="telephone">Telephone *</label>
-            <input id="telephone" type="tel" required>
-          </div>
-          <div>
-            <label for="email">Email *</label>
-            <input id="email" type="email" required>
-          </div>
-          <div>
-            <label for="case-type">Case Type *</label>
-            <select id="case-type" required>
-              <option value="">Select...</option>
-              <option>Divorce</option>
-              <option>Child Support</option>
-              <option>Trusts & Wills</option>
-              <option>Closures</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div>
-            <label for="description">Describe Your Situation *</label>
-            <textarea id="description" required></textarea>
-          </div>
+          <label>Name *</label>
+          <input type="text" required>
+
+          <label>Telephone *</label>
+          <input type="tel" required>
+
+          <label>Email *</label>
+          <input type="email" required>
+
+          <label>Case Type *</label>
+          <select required>
+            <option>Divorce</option>
+            <option>Child Support</option>
+            <option>Trusts & Wills</option>
+            <option>Closures</option>
+          </select>
+
+          <label>Describe Your Situation *</label>
+          <textarea required></textarea>
+
           <div class="disclaimer">
-            Disclaimer: Contacting us does not create an attorney‑client relationship. Do not share sensitive or confidential
-            information, confidentiality is not guaranteed.
+            Contacting us does not create an attorney‑client relationship.
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+
+          <button class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
@@ -119,50 +80,21 @@
     <div>
       <div class="card">
         <h3>Child Support</h3>
-        <p><strong>Caring Approach to Child Support</strong></p>
-        <p>
-          Child support is a key part of ensuring your child’s financial needs are met during and after a divorce.
-          Once custody is determined, child support must be addressed according to New York law. Calculating the right amount
-          can be complex and emotional, and any deviation from the legal guidelines must be properly documented to avoid complications.
-        </p>
-        <p><strong>How Is Child Support Determined in New York?</strong></p>
-        <p>
-          New York calculates child support using a formula set by the Child Support Standards Act (CSSA). This formula determines
-          the percentage of the non‑custodial parent’s income that should be paid toward the financial support of their child or children.
-        </p>
-        <p><strong>Basic CSSA Percentages</strong></p>
+        <p>We help ensure child support is fair and follows New York guidelines.</p>
+        <p><strong>CSSA Percentages:</strong></p>
         <ul>
-          <li>17% of income for 1 child</li>
+          <li>17% for 1 child</li>
           <li>25% for 2 children</li>
           <li>29% for 3 children</li>
           <li>31% for 4 children</li>
-          <li>At least 35% for 5 or more children</li>
+          <li>35%+ for 5+ children</li>
         </ul>
-        <p>
-          These percentages apply to the combined parental income up to $143,000. The non‑custodial parent usually pays child support.
-        </p>
-        <p><strong>What Counts as Income?</strong></p>
-        <p>
-          The court considers many sources of income, including:
-        </p>
-        <ul>
-          <li>Workers’ compensation</li>
-          <li>Pensions and annuities</li>
-          <li>Disability and unemployment benefits</li>
-          <li>Social Security and veterans benefits</li>
-        </ul>
-        <p>
-          Public assistance is excluded from income calculations. We help you understand how the law applies to your situation
-          and work to ensure child support is fair and appropriate.
-        </p>
       </div>
     </div>
+
     <aside class="sidebar">
       <h3>Need Legal Assistance?</h3>
-      <p>
-        If you need help with a family law matter, contact Ahmed & Gonzalez today. Our team is ready to answer your questions
-        and guide you through the process. We speak English, Spanish, and Arabic.
-      </p>
+      <p>We speak English, Spanish, and Arabic.</p>
       <a href="contact.html" class="btn-primary">Contact Us</a>
     </aside>
   </section>
@@ -170,111 +102,31 @@
   <section class="section grid-2">
     <div>
       <div class="card">
-        <h3>Trusts and Wills</h3>
-        <p>
-          Estate planning helps protect your family and property. Trusts and wills are key tools to ensure your wishes are followed.
-        </p>
-        <p><strong>Trusts</strong></p>
-        <p>
-          A trust is a legal arrangement where a grantor transfers assets to a trustee to manage for the benefit of one or more beneficiaries.
-          Reasons to create a trust include avoiding probate, reducing taxes, and managing assets in case of illness.
-        </p>
-        <p><strong>Benefits of a Trust</strong></p>
+        <h3>Trusts & Wills</h3>
+        <p>Estate planning to protect your family and property.</p>
         <ul>
-          <li>Privacy and avoiding public probate proceedings.</li>
-          <li>Continuity in managing assets if you become ill or incapacitated.</li>
-          <li>Asset protection and control over how and when beneficiaries receive property.</li>
-          <li>Flexibility to address complex family or financial situations.</li>
+          <li>Trust creation</li>
+          <li>Last Will & Testament</li>
+          <li>Guardianship planning</li>
         </ul>
-        <p><strong>Wills</strong></p>
-        <p>
-          A Last Will and Testament ensures your property is distributed according to your wishes and avoids intestacy laws.
-          It allows you to appoint executors, guardians, and minimize family disputes.
-        </p>
-        <p><strong>Benefits of Having a Will</strong></p>
-        <ul>
-          <li>Specific gifts to loved ones or charities.</li>
-          <li>Guardianship plans for minor children.</li>
-          <li>Instructions for pet care.</li>
-          <li>Ability to create testamentary trusts.</li>
-        </ul>
-        <p>
-          We help you understand your options and prepare documents that reflect your values and goals.
-        </p>
       </div>
     </div>
+
     <div>
       <div class="card">
-        <h3>Closures (Real Estate Closings)</h3>
-        <p>
-          We assist home buyers and sellers in the Bronx with real estate closings. Whether you are purchasing your first home
-          or selling property, we help protect your investment.
-        </p>
-        <p><strong>Our Services Include:</strong></p>
+        <h3>Closures (Real Estate)</h3>
+        <p>We assist buyers and sellers with real estate closings.</p>
         <ul>
-          <li>Reviewing contracts and explaining key terms.</li>
-          <li>Coordinating title searches and resolving title issues.</li>
-          <li>Preparing and reviewing closing documents.</li>
-          <li>Working with banks, brokers, and agents to keep the process on track.</li>
-          <li>Assisting with final walkthroughs and closing day logistics.</li>
+          <li>Contract review</li>
+          <li>Title search</li>
+          <li>Closing documents</li>
         </ul>
-        <p><strong>On Closing Day</strong></p>
-        <p>
-          We guide you through signing documents, confirm that funds are properly transferred, and ensure that ownership is recorded correctly.
-          Our goal is to make the process clear and reduce stress.
-        </p>
-        <p>
-          We provide transparent information about costs and fees so you know what to expect.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="find-us">
-      <div class="card">
-        <h3>Find Us</h3>
-        <p>
-          Ahmed & Gonzalez<br>
-          1424 Zerega Avenue, Bronx NY 10462
-        </p>
-        <p>
-          Accessible from Bx4 bus and the 6 Train to the Zerega Avenue station.
-        </p>
-        <p>
-          <a href="https://maps.google.com" class="btn btn-primary">View on Google Maps</a>
-        </p>
-      </div>
-      <div class="map-placeholder">
-        Map preview placeholder (Zerega Ave & Parker St)
       </div>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <div>
-      <h4>Ahmed & Gonzalez Law</h4>
-      <p>
-        1424 Zerega Avenue, Bronx NY 10462<br>
-        Phone: 347‑281‑8789<br>
-        Email: ahmedgonzalezlaw@gmail.com
-      </p>
-    </div>
-    <div>
-      <h4>Practice Areas</h4>
-      <div class="footer-links">
-        <a href="immigration.html">Immigration</a>
-        <a href="family-law.html">Family Law</a>
-        <a href="contact.html">Criminal Defense</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>Copyright © 2025 Ahmed & Gonzalez, LLC. All rights reserved.</span>
-    <span>Made with softrAI</span>
-  </div>
-</footer>
+<div data-include="footer.html"></div>
+
 </body>
 </html>
