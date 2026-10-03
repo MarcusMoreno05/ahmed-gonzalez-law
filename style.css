@@ -59,11 +59,13 @@ header {
 .brand-icon {
   width: 32px;
   height: 32px;
+  color: black;
 }
 
 .brand-title {
   font-weight: 600;
   letter-spacing: 0.03em;
+  color: black;
 }
 
 .nav-links {
