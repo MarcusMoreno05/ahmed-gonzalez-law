@@ -1,4 +1,3 @@
-
 function includeHTML() {
   document.querySelectorAll("[data-include]").forEach(async el => {
     const file = el.getAttribute("data-include");
@@ -6,22 +5,22 @@ function includeHTML() {
     const html = await response.text();
     el.innerHTML = html;
 
-    // After header loads, activate dropdown
+    // Activate dropdown after header loads
     setupDropdown();
   });
 }
 
 function setupDropdown() {
-  const btn = document.querySelector(".dropdown-btn");
-  const menu = document.querySelector(".dropdown-menu");
+  const dropdown = document.querySelector(".dropdown");
+  if (!dropdown) return;
 
-  if (!btn || !menu) return;
+  const btn = dropdown.querySelector(".dropdown-btn");
+  const menu = dropdown.querySelector(".dropdown-menu");
 
   btn.addEventListener("click", () => {
     menu.style.display = menu.style.display === "block" ? "none" : "block";
   });
 
-  // Close when clicking outside
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".dropdown")) {
       menu.style.display = "none";
